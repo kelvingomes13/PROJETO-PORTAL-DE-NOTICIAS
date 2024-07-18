@@ -16,7 +16,7 @@
   --h2: 800 16px/140% var(--font-family);
   --h3: 800 14px/140% var(--font-family);
   --text-span: 600 14px/145% var(--font-family);
-  --text: 400 16px/140% var(--font-family)
+  --text: 400 16px/140% var(--font-family);
   --text-sm: 400 14px/160% var(--font-family);
 }
 
@@ -54,5 +54,17 @@ img {
 }
 main {
   margin-top: 40px;
-  
+
+}
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font: 500 10px/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px  rgba(2, 6, 23, 0.251);
+
 }
