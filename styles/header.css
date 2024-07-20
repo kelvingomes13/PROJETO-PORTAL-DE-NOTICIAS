@@ -1,4 +1,4 @@
-#primay {
+#primary {
   padding-block: 20px;
 
   div {
@@ -21,7 +21,7 @@
 
 #secondary {
   padding-block: 14px;
-  border: solid 1px --stroke-color;
+  border: solid 1px var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
 }
