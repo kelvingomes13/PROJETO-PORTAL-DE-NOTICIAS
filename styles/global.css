@@ -46,12 +46,7 @@ img {
 }
 
 /* utility first*/
-.grid {
-  display: grid;
-}
-.grid-flow-col {
-  grid-auto-flow: column;
-}
+
 main {
   margin-block: 40px;
   row-gap: 80px;

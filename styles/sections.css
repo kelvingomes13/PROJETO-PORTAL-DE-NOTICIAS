@@ -7,14 +7,16 @@ section header {
     justify-self: end;
     align-items: center;
     gap: 8px;
+    
 
-    span {
-      background-image: url(../assets/icons/ArrowRight.svg);
+    span {  
+      background-repeat: no-repeat;    
+      background-image: url(../assets/icons/arrowW.svg);
       width: 16px;
-      height: 16px;
+      height: 12px;
     }
     &:hover span {
-      background-image: url(../assets/icons/arrowhover.svg);
+      background-image: url(../assets/icons/arrowB.svg);
       
     }
   }
@@ -28,11 +30,10 @@ section header {
     object-fit: cover;
   
   }
-  .card {
+   .card {
       border-radius: 4px;
       overflow: hidden;
       position: relative;
-
     &::berofe {
       content: "";
       position: absolute;
@@ -41,30 +42,32 @@ section header {
       background: linear-gradient(
         180deg, transparent 0%,
         #020617 100%
-      )
+      );
     }
-
-      figcaption {
-      position: absolute;
-      bottom: 0;
-
-      padding: 24px;
-      
-      h2 {
-        margin-top: 8px;
-      }
-    }
+   
   
   }
 }
+ figcaption {
+      position: absolute;
+      bottom: 0;
+
+      padding: 14px;
+      
+      h2 {
+        margin-top: 2px;
+      }
+    }
 #weekly {
   grid-area: weekly;
   &>div {
     grid-template-columns: repeat(4, 292px);
   }
+
   img {
     height: 160px;
   }
+
   figure {
     position: relative;
     .content-tag {
@@ -73,6 +76,7 @@ section header {
       left: 8px;
       
     }
+
     p {
       margin-top: 8px;
       font-weight: 800;
