@@ -1,13 +1,10 @@
 /*utility first*/
-
 .grid {
   display: grid;
-
 }
-.grid-flow-col {
+ .grid-flow-col {
   grid-auto-flow: column;
 }
-
 .grid-cols-2 {
   grid-template-columns: 1fr 1fr;
 }
@@ -17,7 +14,6 @@
 .gap-32 {
   gap: 32px;
 }
-
 .text-2xl {
   font: var(--h1);
 }
@@ -29,4 +25,14 @@
 }
 .text-sm {
   font: var(--text-sm);
+}
+
+@media (width >= 80em) {
+
+  .grid-flow-col {
+  grid-auto-flow: column;
+  }
+  .grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+  }
 }

@@ -3,34 +3,30 @@ section header {
   border-top: 1px solid var(--stroke-color);
   padding-block: 12px 24px;
   font: var(--text-span);
-   a {
+   & a {
     justify-self: end;
     align-items: center;
-    gap: 8px;
-    
+    gap: 8px;  
 
-    span {  
+    & span {  
       background-repeat: no-repeat;    
       background-image: url(../assets/icons/arrowW.svg);
       width: 16px;
       height: 12px;
     }
     &:hover span {
-      background-image: url(../assets/icons/arrowB.svg);
-      
+      background-image: url(../assets/icons/arrowB.svg);      
     }
   }
-
 }
 
 #featured {
   grid-area: featured;
-  img {
+  & img {
     height: 100%;
-    object-fit: cover;
-  
+    object-fit: cover;  
   }
-   .card {
+   & .card {
       border-radius: 4px;
       overflow: hidden;
       position: relative;
@@ -43,41 +39,37 @@ section header {
         180deg, transparent 0%,
         #020617 100%
       );
-    }
-   
-  
+    } 
   }
 }
- figcaption {
+
+figcaption {
       position: absolute;
       bottom: 0;
-
-      padding: 14px;
-      
-      h2 {
+      padding: 14px;      
+      & h2 {
         margin-top: 2px;
       }
-    }
+}
+
 #weekly {
   grid-area: weekly;
   &>div {
     grid-template-columns: repeat(4, 292px);
   }
-
-  img {
+  & img {
     height: 160px;
   }
 
-  figure {
+  & figure {
     position: relative;
-    .content-tag {
+    & .content-tag {
       position: absolute;
       top: 8px;
-      left: 8px;
-      
+      left: 8px;      
     }
 
-    p {
+    & p {
       margin-top: 8px;
       font-weight: 800;
     }
@@ -86,27 +78,27 @@ section header {
 
 #ai {
   grid-area: ai;
-  img {
+  & img {
     width: 176px;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
-  h3 {
+  & h3 {
     margin-block: 8px 4px;
   }
 }
 
-aside {
+& aside {
   grid-area: aside;
 }
 
 #more {
   margin-top: 32px;
-  h3 {
+  & h3 {
     margin-top: 8px;
-
   }
-  img{
+
+  & img {
   width: 72px;
   aspect-ratio: 1/1;
   object-fit: cover;
